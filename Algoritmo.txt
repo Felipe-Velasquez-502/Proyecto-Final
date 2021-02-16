@@ -1,0 +1,149 @@
+..::ALGORITMO COTIZADOR AUTOMÁTICO::..
+
+1 - Definir el precio base 
+	(var precio_base = 2000)
+
+2 - Definir los posibles rangos de edades en los que se puede encontrar el asegurado/a y los
+    recargos correspondientes según la edad
+	var edad_18 = 0.1 // 10%
+	var edad_25 = 0.2 // 20%
+	var edad_50 = 0.3 // 30%
+
+3 - Definir los posibles rangos de edades en los que se puede encontrar el/la conyuge y los
+    recargos correspondientes según la edad
+	var casado_18 = 0.1 // 10%
+	var casado_25 = 0.2 // 20%
+	var casado_50 = 0.3 // 30%
+
+4 - Definir el porcentaje de recargo en caso tenga hijos el/la asegurado/a
+	var hijo = 0.2 // 20%
+
+5 - Definir el porcentaje de recargo en caso cuente con propiedades
+	var propiedades = 0.35 // 35%
+
+6 - Definir el porcentaje de recargo sobre su sueldo en caso tenga un trabajo
+	var sueldo = 0.05 // 5%
+
+7 - Preguntar nombre
+
+8 - Preguntar edad
+
+9 - Convertir la edad a número porque se ingreso como string
+
+10 - Preguntar si está casado
+
+11 - Si el dato obtenido es SI
+
+12 - Preguntar cuantos años tiene
+
+13 - El dato recibido se convierte a número ya que se ingresó como string
+
+14 - Si no omitir el paso 12 y 13
+
+15 - Preguntar si tiene hijos
+
+16 - Si el dato obtenido es SI
+
+17 - Preguntar cuantos hijos tiene
+
+18 - El dato recibido se convierte a número ya que se ingresó como string
+
+19 - Si no omitir el paso 17 y 18
+
+20 - Preguntar si tiene propiedades
+
+21 - Si el dato obtenido es SI
+
+22 - Preguntar cuantas propiedades tiene
+
+23 - Si no omitir el paso 21 y 22
+
+24 - Preguntar si tien un trabajo
+
+25 - Si el dato obtenido es SI
+
+26 - Preguntar cuanto es su sueldo mensual
+
+27 - Si no omitir el paso 25 y 26
+
+// Calculamos el recargo por los rangos de edades del asegurado
+
+28 - Si la edad del asegurado es mayor o igual a 18 y menor a 25
+
+29 - Operaramos el precio base por la edad
+
+30 - Obtenemos un recargo del 10%
+
+31 - Si la edad del asegurado es mayor o igual a 25 y menor a 50
+
+32 - Operamos el precio base por la edad
+
+33 - Obtenemos un recargo del 20%
+
+34 - Si la edad del asegurado es mayor o igual a 50
+
+35 - Operamos el precio base por la edad
+
+36 - Obtenemos un recargo del 30%
+
+// Calculamos el recargo por los rangos de edades del/la conyuge si tuviera
+
+37 - Si la edad del conyuge es mayor o igual a 18 y menor a 25
+
+38 - Operaramos el precio base por la edad
+
+39 - Obtenemos un recargo del 10%
+
+40 - Si la edad del conyuge es mayor o igual a 25 y menor a 50
+
+41 - Operamos el precio base por la edad
+
+42 - Obtenemos un recargo del 20%
+
+43 - Si la edad del conyuge es mayor o igual a 50
+
+44 - Operamos el precio base por la edad
+
+45 - Obtenemos un recargo del 30%
+
+// Calculamos el recargo por la cantidad de hijos del asegurado si tuviera
+
+46 - Si los hijos son 1 o más
+
+47 - Operar el precio base por el porcentaje por la cantidad de hijos
+
+48 - Obtenemos un recargo del 20% por cada hijo
+
+// Calculamos el recargo de cada propiedad si tuviera
+
+49 - Si tiene 1 o mas propiedades
+
+50 - Operar el precio base por el porcentaje de cada propiedad por la cantidad de propiedades
+
+51 - Obtenemos un porcentaje del 35% por cada propiedad
+
+// Calculamos el recargo del sueldo si tuviera un empleo
+
+52 - Si el sueldo es de 1  o mas
+
+53 - Operar el sueldo por el porcentaje base para el sueldo
+
+54 - Obtenemos un porcentaje del 5% del sueldo
+
+// Calculamos todos los datos obtenidos
+
+55 - Operamos el precio base mas el recargo total obtenido
+
+56 - Imprimir en pantalla el nombre del asegurado
+
+57 - Imprimir en pantalla el recargo total obtenido según los datos proporcionados
+
+58 - Imprimir en pantalla el precio final
+
+59 - Encerrar todo el condigo en un bucle desde la linea 7
+
+60 - Defirnir una condicion para poder salir del programa
+
+61 - Decir al asegurado una palabra para salir si es que quiere salir
+
+62 - Si no el programa se ejecutará todo una y otra vez

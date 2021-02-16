@@ -1,0 +1,48 @@
+..::COTIZADOR AUTOMATICO::..
+
+La empresa TK-U me pide programar un cotizador automático para realizar varias cotizaciones de manera más rápida y eficiente.
+
+El cotizador deberá ser capaz de de evaluar primeramente al asegurado y este tiene que ser si o si mayor de edad y según la edad de este
+se le hará un recargo tambien tomando en cuenta que ya hay un plan base y es este mismo que se sobre el que se harán los recargos, 
+el programa tiene que ser capaz de evaluar tambien si la persona está casada luego deberá evaluar la edad de su conyuge y dependiendo
+la edad se le aplicará un recargo sobre el plan base, el programa también deberá verificar si el asegurado tiene hijos o no y cuantos tiene
+en caso la respuesta sea verdadera, también se deberá verificar si el asegurado cuenta con propiedades y hacerle un recargo en base
+al plan base, se deberá verificar si cuenta con un trabajo y si la respuesta es verdadera verificar cuando es su salario mensual
+y aplicarle un recargo en base a lo que gana.
+
+El problema es el siguiente:
+
+-El asegurado/a tiene que ser si o si mayor de edad
+
+edad_asegurado >= 18
+
+//si el asegurado tiene entre 18 y 24 años se le aplicará un recargo de 10%
+edad_asegurado >=18 && < 25
+//si el asegurado tiene entre 25 y 49 años se le aplicará un recargo de 20%
+edad_asegurado >=25 && < 50
+//si el asegurado tiene 50 años o más se le aplicará un recargo de 30%
+
+-Se deberá verificar si el asegurado/a está casado/a
+	Si está casado/a se tendrá que verificar lo siguiente
+
+//Si el/la conyuge tien entre 18 y 24 años se le aplicará un recargo de 10%
+edad_conyuge >= 18 && < 25
+//Si el/la conyuge tien entre 25 y 49 años se le aplicará un recargo de 20%
+edad_conyuge >= 25 && < 50
+//Si el/la conyuge tiene 50 años o más s ele aplicará un recargo de 30%
+
+-Se derá verificar si el asegurado/a tiene hijos o no
+
+Si tiene hijos se deberá verificar cuantos hijos tiene y aplicar un recargo del 20% por cada hijo
+
+-Se deberá verificar si el asegurado/a cuenta con propiedades
+
+Si cuenta con propiedades se deberá hacer un recargo del 35% por cada propiedad que tenga
+
+-Se deberá verificar si cuenta con un trabajo
+
+Si cuenta con un trabajo se le aplicará un recargo del 5% sobre el salario mensual
+
+-Luego implementaremos varias condiciones que evalue lo anterior descrito
+-Hacer las operaciones correspondientes
+-Mostrar en pantalla los resultados obtenidos conforme a los datos proporcionado por el asegurado/a
